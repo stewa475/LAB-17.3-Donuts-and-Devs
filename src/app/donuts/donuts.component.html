@@ -1,0 +1,4 @@
+<p *ngFor="let d of donuts.results, index as i">
+{{d.id}}.) {{d.name}} <a [routerLink]="['/donuts', i]">See More</a>
+    
+</p>
