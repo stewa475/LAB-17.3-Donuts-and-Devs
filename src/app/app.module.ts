@@ -7,6 +7,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { DonutDetailComponent } from './donut-detail/donut-detail.component';
 import { DonutsComponent } from './donuts/donuts.component';
+import { PeopleComponent } from './people/people.component';
+import { PersonComponent } from './person/person.component';
 
 const appRoutes: Routes = [
   { path: 'donut', component: DonutsComponent },
@@ -19,7 +21,9 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     DonutDetailComponent,
-    DonutsComponent
+    DonutsComponent,
+    PeopleComponent,
+    PersonComponent
   ],
   imports: [
     RouterModule.forRoot(

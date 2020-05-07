@@ -9,15 +9,16 @@ import { Results, Donuts, Donut } from '../interfaces/donuts';
 })
 export class DonutsComponent implements OnInit {
   donuts:Results;
+  donut:Donut;
 
-  constructor(private donutService:DonutsService) {
-  
-  }
+  constructor(private donutService:DonutsService) { }
 
   ngOnInit(): void {
     this.donutService.getDonuts().subscribe(
-      (data:Results) => this.donuts = { ...data},
+      (data: Results) => this.donuts = { ...data }, 
       error => console.error(error)
     );
+
+    
   }
 }

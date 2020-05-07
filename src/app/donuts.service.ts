@@ -6,15 +6,17 @@ import { Results, Donut, Donuts } from './interfaces/donuts';
   providedIn: 'root',
 })
 export class DonutsService {
-  apiUrl: string = 'https://grandcircusco.github.io/demo-apis/donuts.json';
+  apiUrl: string = 'https://grandcircusco.github.io/demo-apis/donuts';
 
   constructor(private http: HttpClient) {}
 
   getDonuts() {
-    return this.http.get<Results>(this.apiUrl);
+    return this.http.get<Results>(`${this.apiUrl}.json`);
   }
 
-  getOneDonut(url: string) {
-    return this.http.get<Donut>(url);
+  getDonut(){
+    return this.http.get<Donuts>(`${this.apiUrl}/id.json`);
   }
+
+  
 }
