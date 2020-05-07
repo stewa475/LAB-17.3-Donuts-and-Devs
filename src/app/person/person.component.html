@@ -1,6 +1,20 @@
-<div>
-    <h2>{{myPerson.firstName}} {{myPerson.lastName}} </h2>
-    <p>{{myPerson.year}}</p> 
-    <p>Known for: {{myPerson.innovation}}</p>
-    
-</div>s
+<h3>{{myPerson.firstName}} {{myPerson.lastName}}</h3>
+
+<p>{{myPerson.year}} -- Known for: {{myPerson.innovation}}</p>
+
+<!--
+<sprk-accordion>
+    <sprk-accordion-item
+      title="{{myPerson.firstName}} {{myPerson.lastName}}"
+      additionalClasses="sprk-u-mbs"
+      additionalHeadingClasses="sprk-b-TypeDisplaySeven"
+      idString="accordion-item-1"
+      analyticsString="object.action.event"
+    >
+      <p>
+        {{myPerson.year}} -- Known for: {{myPerson.innovation}}
+      </p>
+    </sprk-accordion-item>
+    </sprk-accordion-item>
+  </sprk-accordion>
+  -->

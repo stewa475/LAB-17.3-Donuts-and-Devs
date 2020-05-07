@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 
 import { AppComponent } from './app.component';
+import { SparkAngularModule } from "@sparkdesignsystem/spark-angular";
 import { DonutDetailComponent } from './donut-detail/donut-detail.component';
 import { DonutsComponent } from './donuts/donuts.component';
 import { PeopleComponent } from './people/people.component';
@@ -26,6 +27,7 @@ const appRoutes: Routes = [
     PersonComponent
   ],
   imports: [
+    SparkAngularModule,
     RouterModule.forRoot(
       appRoutes,
     ),
