@@ -9,9 +9,9 @@ import { DonutDetailComponent } from './donut-detail/donut-detail.component';
 import { DonutsComponent } from './donuts/donuts.component';
 
 const appRoutes: Routes = [
-  { path: 'donut', component: DonutsComponent },
-  { path: 'donut/:id', component: DonutDetailComponent },
-  { path: '', redirectTo: '/donut', pathMatch: 'full' },
+  { path: 'donuts', component: DonutsComponent },
+  { path: 'donuts/:id', component: DonutDetailComponent },
+  { path: '', redirectTo: '/donuts', pathMatch: 'full' },
  
 ];
 

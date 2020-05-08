@@ -1,4 +1,4 @@
-<p *ngFor="let d of donuts.results, index as i">
-{{d.id}}.) {{d.name}} <a [routerLink]="['/donuts', i]">See More</a>
-    
-</p>
+<h1>Donuts</h1>
+<li *ngFor="let d of donuts?.results">
+{{d.id}}.) {{d.name}} <a [routerLink]="['/donuts', d.id]">See More</a>
+</li>
