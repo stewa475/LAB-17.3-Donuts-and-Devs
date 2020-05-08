@@ -14,7 +14,14 @@ export class DonutsService {
     return this.http.get<Results>(`${this.apiUrl}.json`);
   }
 
+<<<<<<< HEAD
   getOneDonut(id:number) {
     return this.http.get<Donut>(`${this.apiUrl}/${id}.json`);
+=======
+  getDonut(){
+    return this.http.get<Donuts>(`${this.apiUrl}/id.json`);
+>>>>>>> f6bdbece85d6ffe966d8787b5e1c25159099cade
   }
+
+  
 }

@@ -5,8 +5,11 @@ import { RouterModule, Routes } from '@angular/router';
 
 
 import { AppComponent } from './app.component';
+import { SparkAngularModule } from "@sparkdesignsystem/spark-angular";
 import { DonutDetailComponent } from './donut-detail/donut-detail.component';
 import { DonutsComponent } from './donuts/donuts.component';
+import { PeopleComponent } from './people/people.component';
+import { PersonComponent } from './person/person.component';
 
 const appRoutes: Routes = [
   { path: 'donuts', component: DonutsComponent },
@@ -19,9 +22,12 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     DonutDetailComponent,
-    DonutsComponent
+    DonutsComponent,
+    PeopleComponent,
+    PersonComponent
   ],
   imports: [
+    SparkAngularModule,
     RouterModule.forRoot(
       appRoutes,
     ),
