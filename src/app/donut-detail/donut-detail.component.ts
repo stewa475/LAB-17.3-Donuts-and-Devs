@@ -9,8 +9,8 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./donut-detail.component.css'],
 })
 export class DonutDetailComponent implements OnInit {
-  @Input() donuts:Donuts;
- 
+  donut:Donut;
+ id:number;
 
   constructor(
     private donutService: DonutsService,
@@ -18,5 +18,14 @@ export class DonutDetailComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
+    this.route.params.subscribe(params => {
+      this.id = +params['id'];
+
+      this.donutService.getOneDonut(this.id).subscribe(
+
+        (data:Donut) => this.donut = {...data},
+        error => console.error(error)
+      );
+    });
   }
 }

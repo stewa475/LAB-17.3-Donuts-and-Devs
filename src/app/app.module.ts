@@ -12,9 +12,9 @@ import { PeopleComponent } from './people/people.component';
 import { PersonComponent } from './person/person.component';
 
 const appRoutes: Routes = [
-  { path: 'donut', component: DonutsComponent },
-  { path: 'donut/:id', component: DonutDetailComponent },
-  { path: '', redirectTo: '/donut', pathMatch: 'full' },
+  { path: 'donuts', component: DonutsComponent },
+  { path: 'donuts/:id', component: DonutDetailComponent },
+  { path: '', redirectTo: '/donuts', pathMatch: 'full' },
  
 ];
 

@@ -9,7 +9,7 @@ import { Results, Donuts, Donut } from '../interfaces/donuts';
 })
 export class DonutsComponent implements OnInit {
   donuts:Results;
-  donut:Donut;
+  
 
   constructor(private donutService:DonutsService) { }
 
